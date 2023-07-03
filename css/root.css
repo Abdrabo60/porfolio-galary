@@ -7,20 +7,43 @@
 body {
   width: 100vw;
   height: 100vh;
+  background-color: #eee;
 }
 nav {
   display: flex;
 }
-.logo-container {
-  display: inline-block;
-  background-color: #eee;
-}
+
 .project-container {
   display: inline-block;
   background-color: #ddd;
-  padding: auto;
   margin: auto 10px auto 10px;
-  height: 100px;
-  flex-grow: 1;
+
+  height: 200px;
   text-align: center;
+  flex-grow: 1;
+  cursor: pointer;
+}
+.project-container.template1 {
+  background-image: url("../images/template1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.project-container.template2 {
+  background-image: url("../images/template2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.project-container.todo-app {
+  background-image: url("../images/todoapp.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.project-container.udacity-landing-page {
+  background-image: url("../images/udacity-landing-page.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
