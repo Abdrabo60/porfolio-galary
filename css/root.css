@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+nav {
+  display: flex;
+}
+.logo-container {
+  display: inline-block;
+  background-color: #eee;
+}
+.project-container {
+  display: inline-block;
+  background-color: #ddd;
+  padding: auto;
+  margin: auto 10px auto 10px;
+  height: 100px;
+  flex-grow: 1;
+  text-align: center;
+}
