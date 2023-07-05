@@ -10,40 +10,31 @@ body {
   background-color: #eee;
 }
 nav {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(347px, 1fr));
+  justify-items: center;
 }
 
 .project-container {
   display: inline-block;
   background-color: #ddd;
-  margin: auto 10px auto 10px;
-
-  height: 200px;
-  text-align: center;
-  flex-grow: 1;
+  margin: 0;
+  width: 347px;
+  height: 267px;
   cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .project-container.template1 {
   background-image: url("../images/template1.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .project-container.template2 {
   background-image: url("../images/template2.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .project-container.todo-app {
   background-image: url("../images/todoapp.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .project-container.udacity-landing-page {
   background-image: url("../images/udacity-landing-page.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
