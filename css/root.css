@@ -9,22 +9,32 @@ body {
   height: 100vh;
   background-color: #eee;
 }
-nav {
+p {
+  text-align: center;
+  font-family: "Cairo", sans-serif;
+  font-size: 50px;
+  background-color: rgb(18, 194, 165);
+  color: white;
+  margin-bottom: 10px;
+}
+.main-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(347px, 1fr));
+  justify-items: center;
   align-items: center;
+  gap: 10px;
 }
 
 .project-container {
   display: inline-block;
   background-color: #ddd;
-  margin: 0;
   width: 347px;
   height: 267px;
   cursor: pointer;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 20px;
 }
 .project-container.template1 {
   background-image: url("../images/template1.png");
